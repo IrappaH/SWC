@@ -1,8 +1,15 @@
 package com.swc.common;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.util.SystemOutLogger;
 
 public class Excel {
 
@@ -38,6 +45,31 @@ public class Excel {
 		}
 		return v;
 	}
+	
+	public static String writeIntoExcel(String path, String sheet, int r, int c, String data) {
+		
+		try {
+			
+			Workbook wb = WorkbookFactory.create(new FileInputStream(path));
+			
+			String r1 = wb.getSheet(sheet).getRow(r).getCell(c).getStringCellValue();
+			System.out.println(r1);
+			
+			wb.getSheet(sheet).getRow(0).createCell(0).setCellValue("2.41.0");
+			FileOutputStream fos = new FileOutputStream(path);
+			wb.write(fos);
+		}catch(Exception e) {
+			
+			System.out.println("Exception while writing data to Excel " + e.getMessage());
+			e.printStackTrace();
+			
+		}
+		return data;
+		
+		
+	}
+
+	
 	
 }
 

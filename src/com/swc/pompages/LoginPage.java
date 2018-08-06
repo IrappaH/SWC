@@ -17,6 +17,9 @@ public class LoginPage {
 	@FindBy(xpath="//button[@type='submit']")
 	private WebElement loginBTN;
 	
+	@FindBy(xpath="(//img[@src='images/user_iocn_header.png'])/../b")
+	private WebElement welcome;
+	
 	@FindBy(xpath="//span[contains(.,'Please enter')]|//span[contains(.,'Invalid User')]")
 	private WebElement errMsg;
 	
@@ -34,6 +37,9 @@ public class LoginPage {
 	
 	public void clickLogin() {
 		loginBTN.click();
+	}
+	public String verify_current_userName() {
+		return welcome.getText();
 	}
 	
 	public void verifyErrMsg(String expectedMSG) {

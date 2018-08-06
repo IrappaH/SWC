@@ -9,7 +9,7 @@ import java.util.Properties;
 public class PropertiesConfig {
 	
 	Properties prop;
-	String PropertiesFilePath = "C:\\Users\\user\\OneDrive - Unizen Technologies\\SmartWaterController\\UZ_SWC_SeleniumTool\\data\\Configuration.properties";
+	String PropertiesFilePath = ".\\data\\Configuration.properties";
 	
 	public PropertiesConfig() throws IOException {
 		File file = new File(PropertiesFilePath);
