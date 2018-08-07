@@ -10,7 +10,7 @@ public class InvalidLogin extends BaseTest {
 	@Test(priority=2,groups= {"login"})
 	public void testbInvalidLogin() throws InterruptedException {
 		int rc=Excel.getRowCount(XL_PATH, "InvalidLogin");
-		System.out.println("Getting excel no of rows: "+rc);
+		System.out.println("Total number of rows getting from Excel invalid sheet: "+rc);
 		for(int i=1;i<=rc;i++) {
 		String un=Excel.getValue(XL_PATH,"InvalidLogin",i,0);
 		String pw=Excel.getValue(XL_PATH,"InvalidLogin",i,1);

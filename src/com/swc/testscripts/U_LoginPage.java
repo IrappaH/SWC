@@ -35,8 +35,8 @@ public class U_LoginPage extends BaseTest{
 		String eTitle1 = "WaterConsumption | Liter";
 		e.verifyHomePageIsDisplayed(driver, eTitle );
 		String current_userName = l.verify_current_userName();
-		Excel.writeIntoExcel(XL_PATH, "sheet1", 0, 0, current_userName);
-		System.out.println("This is the current user name :"+ current_userName);
+		/*Excel.writeIntoExcel(XL_PATH, "sheet1", 0, 0, current_userName);
+		System.out.println("This is the current user name :"+ current_userName);*/
 	}
 
 	

@@ -11,7 +11,7 @@
       <![CDATA[testbInvalidLogin is PASSED]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="39030" started-at="2018-08-06T13:06:47Z" finished-at="2018-08-06T13:07:26Z">
+  <suite name="Suite" duration-ms="113845" started-at="2018-08-07T05:26:16Z" finished-at="2018-08-07T05:28:10Z">
     <groups>
       <group name="smoke">
         <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
@@ -21,9 +21,9 @@
         <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
       </group> <!-- login -->
     </groups>
-    <test name="Test" duration-ms="39030" started-at="2018-08-06T13:06:47Z" finished-at="2018-08-06T13:07:26Z">
+    <test name="Test" duration-ms="113845" started-at="2018-08-07T05:26:16Z" finished-at="2018-08-07T05:28:10Z">
       <class name="com.swc.testscripts.U_LoginPage">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="openApplication" is-config="true" duration-ms="9055" started-at="2018-08-06T13:06:47Z" finished-at="2018-08-06T13:06:56Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="openApplication" is-config="true" duration-ms="48800" started-at="2018-08-07T05:26:17Z" finished-at="2018-08-07T05:27:05Z">
           <params>
             <param index="0">
               <value>
@@ -39,14 +39,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="testValidLogin" duration-ms="2989" started-at="2018-08-06T13:06:56Z" finished-at="2018-08-06T13:06:59Z">
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="testValidLogin" duration-ms="31010" started-at="2018-08-07T05:27:05Z" finished-at="2018-08-07T05:27:36Z">
           <reporter-output>
             <line>
               <![CDATA[HomePage is Displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="closeApplication" is-config="true" duration-ms="400" started-at="2018-08-06T13:06:59Z" finished-at="2018-08-06T13:06:59Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="closeApplication" is-config="true" duration-ms="249" started-at="2018-08-07T05:27:36Z" finished-at="2018-08-07T05:27:37Z">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
         </test-method> <!-- closeApplication -->
       </class> <!-- com.swc.testscripts.U_LoginPage -->
       <class name="com.swc.testscripts.InvalidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b]" name="openApplication" is-config="true" duration-ms="8364" started-at="2018-08-06T13:06:59Z" finished-at="2018-08-06T13:07:07Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b]" name="openApplication" is-config="true" duration-ms="13393" started-at="2018-08-07T05:27:37Z" finished-at="2018-08-07T05:27:50Z">
           <params>
             <param index="0">
               <value>
@@ -78,11 +78,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b]" name="testbInvalidLogin" duration-ms="17927" started-at="2018-08-06T13:07:07Z" finished-at="2018-08-06T13:07:25Z">
+        <test-method status="PASS" signature="testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b]" name="testbInvalidLogin" duration-ms="20050" started-at="2018-08-07T05:27:50Z" finished-at="2018-08-07T05:28:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testbInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b]" name="closeApplication" is-config="true" duration-ms="246" started-at="2018-08-06T13:07:25Z" finished-at="2018-08-06T13:07:26Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b]" name="closeApplication" is-config="true" duration-ms="296" started-at="2018-08-07T05:28:10Z" finished-at="2018-08-07T05:28:10Z">
           <params>
             <param index="0">
               <value>
