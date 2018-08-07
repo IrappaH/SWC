@@ -4,8 +4,8 @@ package com.swc.testscripts;
 import org.apache.poi.util.SystemOutLogger;
 import org.testng.annotations.Test;
 
-import com.swc.common.BaseTest;
-import com.swc.common.Excel;
+import com.swc.generic.BaseTest;
+import com.swc.generic.Excel;
 import com.swc.pompages.EnterPage;
 import com.swc.pompages.LoginPage;
 

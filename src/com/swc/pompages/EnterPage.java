@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 
-import com.swc.common.AutoUtil;
-import com.swc.common.IAutoConst;
+import com.swc.generic.AutoUtil;
+import com.swc.generic.IAutoConst;
 
 
 public class EnterPage {

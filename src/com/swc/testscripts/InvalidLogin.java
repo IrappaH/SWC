@@ -2,8 +2,8 @@ package com.swc.testscripts;
 
 import org.testng.annotations.Test;
 
-import com.swc.common.BaseTest;
-import com.swc.common.Excel;
+import com.swc.generic.BaseTest;
+import com.swc.generic.Excel;
 import com.swc.pompages.LoginPage;
 
 public class InvalidLogin extends BaseTest {
