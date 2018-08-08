@@ -6,6 +6,7 @@
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
+    
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.7.0</version>
@@ -14,7 +15,19 @@
           <target>1.8</target>
         </configuration>
       </plugin>
-    </plugins>
+      
+       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.19.1</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      
+    </plugins>    
   </build>
   <dependencies>
   	<dependency>
@@ -50,10 +63,16 @@
   		<artifactId>testng</artifactId>
   		<version>6.14.2</version>
   	</dependency>
+
   	<dependency>
-  		<groupId>org.apache.maven.surefire</groupId>
-  		<artifactId>surefire-testng</artifactId>
-  		<version>2.22.0</version>
+  		<groupId>org.seleniumhq.selenium</groupId>
+  		<artifactId>selenium-chrome-driver</artifactId>
+  		<version>3.13.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.seleniumhq.selenium</groupId>
+  		<artifactId>selenium-ie-driver</artifactId>
+  		<version>3.14.0</version>
   	</dependency>
   </dependencies>
 </project>

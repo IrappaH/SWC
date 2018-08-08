@@ -7,6 +7,8 @@ public interface IAutoConst {
 	String GECKO_VALUE="./drivers/geckodriver.exe";
 	String EDGE_KEY="webdriver.edge.driver";
 	String EDGE_VALUE="./drivers/MicrosoftWebDriver.exe";
+	String IE_KEY="webdriver.ie.driver";
+	String IE_VALUE="./drivers/IEDriverServer.exe";
 	String XL_PATH="./data/input.xlsx";
 	String CONFIG_PATH="./data/config.properties";
 	String IMG_PATH="./screenshots/";

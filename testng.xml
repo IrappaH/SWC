@@ -34,6 +34,18 @@
       <class name="com.swc.testscripts.InvalidLogin"></class> 
     </classes>
   </test> <!-- Test -->
+  
+   <!-- Adding IE browser for parallel test -->
+ 
+	<!-- <test name="IETest">
+	 <test thread-count="5" name="Test">
+	  <parameter name="ip" value="localhost"></parameter>
+  	<parameter name="browser" value="internet explorer"></parameter>
+    <classes>
+      <class name="com.swc.testscripts.U_LoginPage"/>
+      <class name="com.swc.testscripts.InvalidLogin"></class> 
+    </classes>
+  </test> Test -->
 
 </suite> <!-- Suite -->
 

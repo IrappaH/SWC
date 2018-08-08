@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
@@ -16,9 +17,10 @@ import org.testng.annotations.Parameters;
 public abstract class BaseTest implements IAutoConst{
 	public WebDriver driver;
 	static {
-		System.setProperty(CHROME_KEY,CHROME_VALUE);
+		/*System.setProperty(CHROME_KEY,CHROME_VALUE);*/
 		System.setProperty(GECKO_KEY,GECKO_VALUE);
 		System.setProperty(EDGE_KEY, EDGE_VALUE);
+		/*System.setProperty(IE_KEY, IE_VALUE);*/
 				
 	}
 	
@@ -34,7 +36,7 @@ public abstract class BaseTest implements IAutoConst{
 		whichBrowser.setBrowserName(browser);
 		driver=new RemoteWebDriver(whichSystem, whichBrowser);
 	//	driver= new EdgeDriver();
-		
+	//	driver = new InternetExplorerDriver();
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
 	}

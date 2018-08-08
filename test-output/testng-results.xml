@@ -26,102 +26,25 @@
       <![CDATA[testbInvalidLogin is PASSED]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="60949" started-at="2018-08-08T16:27:09Z" finished-at="2018-08-08T16:28:10Z">
+  <suite name="Suite" duration-ms="70838" started-at="2018-08-08T18:09:24Z" finished-at="2018-08-08T18:10:35Z">
     <groups>
       <group name="smoke">
-        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@4cf777e8]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
-        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@64bfbc86]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
-        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@617faa95]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
+        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
+        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@4b952a2d]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
+        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@5025a98f]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
       </group> <!-- smoke -->
       <group name="login">
-        <method signature="InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@2f686d1f]" name="testbInvalidLogin" class="com.swc.testscripts.InvalidLogin"/>
-        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@4cf777e8]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
-        <method signature="InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@64bf3bbf]" name="testbInvalidLogin" class="com.swc.testscripts.InvalidLogin"/>
-        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@64bfbc86]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
-        <method signature="InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@1e127982]" name="testbInvalidLogin" class="com.swc.testscripts.InvalidLogin"/>
-        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@617faa95]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
+        <method signature="InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b]" name="testbInvalidLogin" class="com.swc.testscripts.InvalidLogin"/>
+        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
+        <method signature="InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@3159c4b8]" name="testbInvalidLogin" class="com.swc.testscripts.InvalidLogin"/>
+        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@4b952a2d]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
+        <method signature="InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@49993335]" name="testbInvalidLogin" class="com.swc.testscripts.InvalidLogin"/>
+        <method signature="U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@5025a98f]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
       </group> <!-- login -->
     </groups>
-    <test name="EdgeTest" duration-ms="26198" started-at="2018-08-08T16:27:09Z" finished-at="2018-08-08T16:27:36Z">
+    <test name="Testchrome" duration-ms="27795" started-at="2018-08-08T18:09:24Z" finished-at="2018-08-08T18:09:52Z">
       <class name="com.swc.testscripts.U_LoginPage">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.U_LoginPage@617faa95]" name="openApplication" is-config="true" duration-ms="3504" started-at="2018-08-08T16:27:09Z" finished-at="2018-08-08T16:27:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MicrosoftEdge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@617faa95]" name="testValidLogin" duration-ms="2397" started-at="2018-08-08T16:27:13Z" finished-at="2018-08-08T16:27:15Z">
-          <reporter-output>
-            <line>
-              <![CDATA[HomePage is Displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.U_LoginPage@617faa95]" name="closeApplication" is-config="true" duration-ms="1002" started-at="2018-08-08T16:27:15Z" finished-at="2018-08-08T16:27:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@617faa95] output=HomePage is Displayed]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testValidLogin is PASSED]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- com.swc.testscripts.U_LoginPage -->
-      <class name="com.swc.testscripts.InvalidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.InvalidLogin@1e127982]" name="openApplication" is-config="true" duration-ms="2554" started-at="2018-08-08T16:27:16Z" finished-at="2018-08-08T16:27:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MicrosoftEdge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@1e127982]" name="testbInvalidLogin" duration-ms="16585" started-at="2018-08-08T16:27:19Z" finished-at="2018-08-08T16:27:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testbInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.InvalidLogin@1e127982]" name="closeApplication" is-config="true" duration-ms="104" started-at="2018-08-08T16:27:36Z" finished-at="2018-08-08T16:27:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testbInvalidLogin status=SUCCESS method=InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@1e127982] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testbInvalidLogin is PASSED]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- com.swc.testscripts.InvalidLogin -->
-    </test> <!-- EdgeTest -->
-    <test name="Testchrome" duration-ms="26530" started-at="2018-08-08T16:27:09Z" finished-at="2018-08-08T16:27:36Z">
-      <class name="com.swc.testscripts.U_LoginPage">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.U_LoginPage@64bfbc86]" name="openApplication" is-config="true" duration-ms="10708" started-at="2018-08-08T16:27:09Z" finished-at="2018-08-08T16:27:20Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.U_LoginPage@4b952a2d]" name="openApplication" is-config="true" duration-ms="12897" started-at="2018-08-08T18:09:24Z" finished-at="2018-08-08T18:09:37Z">
           <params>
             <param index="0">
               <value>
@@ -137,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@64bfbc86]" name="testValidLogin" duration-ms="431" started-at="2018-08-08T16:27:20Z" finished-at="2018-08-08T16:27:21Z">
+        <test-method status="FAIL" signature="testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@4b952a2d]" name="testValidLogin" duration-ms="251" started-at="2018-08-08T18:09:37Z" finished-at="2018-08-08T18:09:37Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: call function result missing 'value'
@@ -148,7 +71,7 @@ Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.2
 System info: host: 'IRAPPA', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.32.498550 (9dec58e66c31bc..., userDataDir: C:\Users\dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 7a55827fc65b59e802a09e5029e82fab]]>
+Session ID: 2d013b70e7cde6932f0dba90b9021abb]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
@@ -159,7 +82,7 @@ Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.2
 System info: host: 'IRAPPA', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.32.498550 (9dec58e66c31bc..., userDataDir: C:\Users\dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 7a55827fc65b59e802a09e5029e82fab
+Session ID: 2d013b70e7cde6932f0dba90b9021abb
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -207,11 +130,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.U_LoginPage@64bfbc86]" name="closeApplication" is-config="true" duration-ms="809" started-at="2018-08-08T16:27:21Z" finished-at="2018-08-08T16:27:21Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.U_LoginPage@4b952a2d]" name="closeApplication" is-config="true" duration-ms="616" started-at="2018-08-08T18:09:37Z" finished-at="2018-08-08T18:09:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=FAILURE method=U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@64bfbc86] output={null}]]]>
+                <![CDATA[[TestResult name=testValidLogin status=FAILURE method=U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@4b952a2d] output={null}]]]>
               </value>
             </param>
           </params>
@@ -223,7 +146,7 @@ at java.lang.Thread.run(Unknown Source)
         </test-method> <!-- closeApplication -->
       </class> <!-- com.swc.testscripts.U_LoginPage -->
       <class name="com.swc.testscripts.InvalidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.InvalidLogin@64bf3bbf]" name="openApplication" is-config="true" duration-ms="13616" started-at="2018-08-08T16:27:21Z" finished-at="2018-08-08T16:27:35Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.InvalidLogin@3159c4b8]" name="openApplication" is-config="true" duration-ms="12306" started-at="2018-08-08T18:09:38Z" finished-at="2018-08-08T18:09:50Z">
           <params>
             <param index="0">
               <value>
@@ -239,7 +162,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@64bf3bbf]" name="testbInvalidLogin" duration-ms="181" started-at="2018-08-08T16:27:35Z" finished-at="2018-08-08T16:27:35Z">
+        <test-method status="FAIL" signature="testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@3159c4b8]" name="testbInvalidLogin" duration-ms="198" started-at="2018-08-08T18:09:50Z" finished-at="2018-08-08T18:09:50Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: call function result missing 'value'
@@ -250,7 +173,7 @@ Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.2
 System info: host: 'IRAPPA', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.32.498550 (9dec58e66c31bc..., userDataDir: C:\Users\dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: a855784a093b91ef9a3e035b1b7fd22e]]>
+Session ID: f284fe388b7f574a811da1c49c843d93]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
@@ -261,7 +184,7 @@ Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.2
 System info: host: 'IRAPPA', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.32.498550 (9dec58e66c31bc..., userDataDir: C:\Users\dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: a855784a093b91ef9a3e035b1b7fd22e
+Session ID: f284fe388b7f574a811da1c49c843d93
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -309,11 +232,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testbInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.InvalidLogin@64bf3bbf]" name="closeApplication" is-config="true" duration-ms="730" started-at="2018-08-08T16:27:35Z" finished-at="2018-08-08T16:27:36Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.InvalidLogin@3159c4b8]" name="closeApplication" is-config="true" duration-ms="1479" started-at="2018-08-08T18:09:50Z" finished-at="2018-08-08T18:09:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testbInvalidLogin status=FAILURE method=InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@64bf3bbf] output={null}]]]>
+                <![CDATA[[TestResult name=testbInvalidLogin status=FAILURE method=InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@3159c4b8] output={null}]]]>
               </value>
             </param>
           </params>
@@ -325,9 +248,9 @@ at java.lang.Thread.run(Unknown Source)
         </test-method> <!-- closeApplication -->
       </class> <!-- com.swc.testscripts.InvalidLogin -->
     </test> <!-- Testchrome -->
-    <test name="Testfirefox" duration-ms="60949" started-at="2018-08-08T16:27:09Z" finished-at="2018-08-08T16:28:10Z">
+    <test name="EdgeTest" duration-ms="29509" started-at="2018-08-08T18:09:24Z" finished-at="2018-08-08T18:09:53Z">
       <class name="com.swc.testscripts.U_LoginPage">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.U_LoginPage@4cf777e8]" name="openApplication" is-config="true" duration-ms="30581" started-at="2018-08-08T16:27:09Z" finished-at="2018-08-08T16:27:40Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.U_LoginPage@5025a98f]" name="openApplication" is-config="true" duration-ms="3422" started-at="2018-08-08T18:09:24Z" finished-at="2018-08-08T18:09:27Z">
           <params>
             <param index="0">
               <value>
@@ -336,25 +259,25 @@ at java.lang.Thread.run(Unknown Source)
             </param>
             <param index="1">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[MicrosoftEdge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@4cf777e8]" name="testValidLogin" duration-ms="2623" started-at="2018-08-08T16:27:40Z" finished-at="2018-08-08T16:27:43Z">
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@5025a98f]" name="testValidLogin" duration-ms="1985" started-at="2018-08-08T18:09:27Z" finished-at="2018-08-08T18:09:29Z">
           <reporter-output>
             <line>
               <![CDATA[HomePage is Displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.U_LoginPage@4cf777e8]" name="closeApplication" is-config="true" duration-ms="441" started-at="2018-08-08T16:27:43Z" finished-at="2018-08-08T16:27:43Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.U_LoginPage@5025a98f]" name="closeApplication" is-config="true" duration-ms="3987" started-at="2018-08-08T18:09:29Z" finished-at="2018-08-08T18:09:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@4cf777e8] output=HomePage is Displayed]]]>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@5025a98f] output=HomePage is Displayed]]]>
               </value>
             </param>
           </params>
@@ -366,7 +289,45 @@ at java.lang.Thread.run(Unknown Source)
         </test-method> <!-- closeApplication -->
       </class> <!-- com.swc.testscripts.U_LoginPage -->
       <class name="com.swc.testscripts.InvalidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.InvalidLogin@2f686d1f]" name="openApplication" is-config="true" duration-ms="9487" started-at="2018-08-08T16:27:43Z" finished-at="2018-08-08T16:27:53Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.InvalidLogin@49993335]" name="openApplication" is-config="true" duration-ms="2232" started-at="2018-08-08T18:09:33Z" finished-at="2018-08-08T18:09:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@49993335]" name="testbInvalidLogin" duration-ms="16269" started-at="2018-08-08T18:09:36Z" finished-at="2018-08-08T18:09:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testbInvalidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.InvalidLogin@49993335]" name="closeApplication" is-config="true" duration-ms="1572" started-at="2018-08-08T18:09:52Z" finished-at="2018-08-08T18:09:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testbInvalidLogin status=SUCCESS method=InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@49993335] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testbInvalidLogin is PASSED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.swc.testscripts.InvalidLogin -->
+    </test> <!-- EdgeTest -->
+    <test name="Testfirefox" duration-ms="70838" started-at="2018-08-08T18:09:24Z" finished-at="2018-08-08T18:10:35Z">
+      <class name="com.swc.testscripts.U_LoginPage">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="openApplication" is-config="true" duration-ms="39412" started-at="2018-08-08T18:09:24Z" finished-at="2018-08-08T18:10:03Z">
           <params>
             <param index="0">
               <value>
@@ -382,15 +343,54 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@2f686d1f]" name="testbInvalidLogin" duration-ms="17487" started-at="2018-08-08T16:27:53Z" finished-at="2018-08-08T16:28:10Z">
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="testValidLogin" duration-ms="2138" started-at="2018-08-08T18:10:03Z" finished-at="2018-08-08T18:10:05Z">
           <reporter-output>
+            <line>
+              <![CDATA[HomePage is Displayed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testbInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.InvalidLogin@2f686d1f]" name="closeApplication" is-config="true" duration-ms="284" started-at="2018-08-08T16:28:10Z" finished-at="2018-08-08T16:28:10Z">
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.U_LoginPage@598067a5]" name="closeApplication" is-config="true" duration-ms="655" started-at="2018-08-08T18:10:05Z" finished-at="2018-08-08T18:10:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testbInvalidLogin status=SUCCESS method=InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@2f686d1f] output={null}]]]>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=U_LoginPage.testValidLogin()[pri:1, instance:com.swc.testscripts.U_LoginPage@598067a5] output=HomePage is Displayed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testValidLogin is PASSED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.swc.testscripts.U_LoginPage -->
+      <class name="com.swc.testscripts.InvalidLogin">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b]" name="openApplication" is-config="true" duration-ms="11005" started-at="2018-08-08T18:10:06Z" finished-at="2018-08-08T18:10:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b]" name="testbInvalidLogin" duration-ms="17303" started-at="2018-08-08T18:10:17Z" finished-at="2018-08-08T18:10:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testbInvalidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b]" name="closeApplication" is-config="true" duration-ms="287" started-at="2018-08-08T18:10:34Z" finished-at="2018-08-08T18:10:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testbInvalidLogin status=SUCCESS method=InvalidLogin.testbInvalidLogin()[pri:2, instance:com.swc.testscripts.InvalidLogin@3c0ecd4b] output={null}]]]>
               </value>
             </param>
           </params>
