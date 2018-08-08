@@ -55,11 +55,10 @@ public class Excel {
 			String r1 = wb.getSheet(sheet).getRow(r).getCell(c).getStringCellValue();
 			System.out.println(r1);
 			
-			wb.getSheet(sheet).getRow(0).createCell(0).setCellValue("2.41.0");
+			wb.getSheet(sheet).getRow(0).createCell(0).setCellValue(data);
 			FileOutputStream fos = new FileOutputStream(path);
-			wb.write(fos);
-		}catch(Exception e) {
-			
+			wb.write(fos);			
+			} catch(Exception e) {
 			System.out.println("Exception while writing data to Excel " + e.getMessage());
 			e.printStackTrace();
 			
