@@ -21,7 +21,8 @@ public abstract class BaseTest implements IAutoConst{
 	static {
 		System.setProperty(CHROME_KEY,CHROME_VALUE);
 		System.setProperty(GECKO_KEY,GECKO_VALUE);
-		
+		System.setProperty(EDGE_KEY, EDGE_VALUE);
+				
 	}
 	
 	@Parameters({"ip","browser"})
