@@ -1,13 +1,10 @@
 package com.swc.generic;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.io.IOException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
@@ -31,12 +28,13 @@ public abstract class BaseTest implements IAutoConst{
 		String appURL=AutoUtil.getProperty(CONFIG_PATH,"URL");
 		String strITO = AutoUtil.getProperty(CONFIG_PATH,"ITO");
 		long ITO = Long.parseLong(strITO);
-		
+		System.out.println("this is browser name "+ browser);
 		URL whichSystem=new URL("http://"+ip+":4444/wd/hub");
 		DesiredCapabilities whichBrowser=new DesiredCapabilities();
 		whichBrowser.setBrowserName(browser);
 		driver=new RemoteWebDriver(whichSystem, whichBrowser);
-
+	//	driver= new EdgeDriver();
+		
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
 	}

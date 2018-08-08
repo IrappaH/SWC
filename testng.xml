@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="Suite" parallel="tests">
 <test name="Testfirefox">
 <!--  <test thread-count="5" name="Test"> -->
@@ -11,9 +10,9 @@
       <class name="com.swc.testscripts.InvalidLogin"></class>
     </classes>
   </test> <!-- Test -->
-<!-- </test> -->
 
 <!-- Adding chrome browser for parallel test  -->
+
 <test name="Testchrome">
 <!--  <test thread-count="5" name="Test"> -->
   <parameter name="ip" value="localhost"></parameter>
@@ -23,23 +22,18 @@
       <class name="com.swc.testscripts.InvalidLogin"></class>
     </classes>
   </test> <!-- Test -->
-<!-- </test> -->
 
  <!-- Adding edge browser for parallel test -->
+ 
 	<test name="EdgeTest">
 	<!--  <test thread-count="5" name="Test"> -->
 	  <parameter name="ip" value="localhost"></parameter>
-  	<parameter name="browser" value="Edge"></parameter>
+  	<parameter name="browser" value="MicrosoftEdge"></parameter>
     <classes>
       <class name="com.swc.testscripts.U_LoginPage"/>
-      <class name="com.swc.testscripts.InvalidLogin"></class>
-      
-    <!--  <test name="EdgeTest">
-	<parameter name="browser" value="Edge" /> -->
-
+      <class name="com.swc.testscripts.InvalidLogin"></class> 
     </classes>
   </test> <!-- Test -->
-<!-- </test> -->
 
 </suite> <!-- Suite -->
 
