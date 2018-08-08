@@ -2,7 +2,7 @@ package com.swc.generic;
 
 public interface IAutoConst {
 	String CHROME_KEY="webdriver.chrome.driver";
-	String CHROME_VALUE="E:\\Hydac\\QSP\\chromedriver.exe";
+	String CHROME_VALUE="./data/chromedriver.exe";
 	String GECKO_KEY="webdriver.gecko.driver";
 	String GECKO_VALUE="./drivers/geckodriver.exe";
 	String EDGE_KEY="webdriver.edge.driver";
