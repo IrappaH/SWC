@@ -8,20 +8,21 @@
     <classes>
       <class name="com.swc.testscripts.U_LoginPage"/>
       <class name="com.swc.testscripts.InvalidLogin"></class>
+    
     </classes>
   </test> <!-- Test -->
 
 <!-- Adding chrome browser for parallel test  -->
-
+ 
 <test name="Testchrome">
-<!--  <test thread-count="5" name="Test"> -->
+ <!-- <test thread-count="5" name="Test"> -->
   <parameter name="ip" value="localhost"></parameter>
   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.swc.testscripts.U_LoginPage"/>
       <class name="com.swc.testscripts.InvalidLogin"></class>
     </classes>
-  </test> <!-- Test -->
+  </test> 
 
  <!-- Adding edge browser for parallel test -->
  

@@ -2,6 +2,7 @@ package com.swc.testscripts;
 
 
 import org.apache.poi.util.SystemOutLogger;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.swc.generic.BaseTest;
@@ -14,12 +15,14 @@ public class U_LoginPage extends BaseTest{
 
 	@Test(priority=1,groups= {"login","smoke"})
 	public void testValidLogin() {
-	//	String un=Excel.getValue(XL_PATH,"ValidLogin",1,0);
-		String un = Excel.getValue(XL_PATH, "ValidLogin", 1, 0);
+		int rc = Excel.getRowCount(XL_PATH, "ValidLogin");
+		System.out.println("Total number of valid users count:"+rc);
+		for(int i=1;i<=rc;i++) {
+		String un = Excel.getValue(XL_PATH, "ValidLogin", i, 0);
 		System.out.println("Reading from Excel username  :"+ un);
-		String pw=Excel.getValue(XL_PATH, "ValidLogin", 1, 1);	
+		String pw=Excel.getValue(XL_PATH, "ValidLogin", i, 1);	
 		System.out.println("Reading from Excel password :"+ pw);
-		String eTitle=Excel.getValue(XL_PATH,"ValidLogin",1,2);
+		String eTitle=Excel.getValue(XL_PATH,"ValidLogin",i,2);
 		System.out.println("Reading from Excel title:"+ eTitle);
 		//Created Pom class for login page Page
 		LoginPage l=new LoginPage(driver);
@@ -33,13 +36,17 @@ public class U_LoginPage extends BaseTest{
 		//verify home page....
 		EnterPage e=new EnterPage(driver);
 		String eTitle1 = "WaterConsumption | Liter";
-		e.verifyHomePageIsDisplayed(driver, eTitle );
 		String current_userName = l.verify_current_userName();
+		Reporter.log("Login success for :"+current_userName+ " and verifying below message");
+		e.verifyHomePageIsDisplayed(driver, eTitle );
+		
+		Reporter.log( "Login success for: " + current_userName);
 		/*Excel.writeIntoExcel(XL_PATH, "sheet1", 0, 0, current_userName);
 		System.out.println("This is the current user name :"+ current_userName);*/
+		l.SignOut();
 	}
 
-	
+	}
 
 
 }

@@ -17,23 +17,20 @@ public class EnterPage {
 
 	@FindBy(xpath="(//div[@class='col-xs-6 col-md-6 text-center'])[1]")
 	private WebElement users;
-	
-	@FindBy(linkText="About your actiTIME")
-	private WebElement aboutAT;
-	
-	@FindBy(xpath="(//div[@class='col-xs-6 col-md-6 text-center'])[12]")
+			
+	@FindBy(xpath="(//div[@class='col-xs-6 col-md-6 text-center'])[2]")
 	private WebElement sensors;
 	
 	public EnterPage(WebDriver driver) {
 		PageFactory.initElements(driver,this);
 	}
 	
-	public void getValueFromUSers() {
-		users.getAttribute("value");
+	public Object getValueFromUSers() {
+		return users.getAttribute("value");
 	}
 	
-	public void getValuefromSensors() {
-		aboutAT.click();
+	public Object getValuefromSensors() {
+		return sensors.getAttribute("value");
 	}
 	
 	public void verifyProductVersion(String eVersion) {
@@ -47,10 +44,10 @@ public class EnterPage {
 		WebDriverWait wait=new WebDriverWait(driver,ETO);
 		try {
 			wait.until(ExpectedConditions.titleIs(eTitle));
-			Reporter.log("HomePage is Displayed",true);
+			Reporter.log("Home Page is Displayed",true);
 		}
 		catch (Exception e) {
-			Reporter.log("HomePage is Not Displayed",true);
+			Reporter.log("Home Page is Not Displayed",true);
 			Assert.fail();
 		}
 		

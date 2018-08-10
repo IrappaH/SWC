@@ -23,6 +23,9 @@ public class LoginPage {
 	@FindBy(xpath="//span[contains(.,'Please enter')]|//span[contains(.,'Invalid User')]")
 	private WebElement errMsg;
 	
+	@FindBy(xpath="//a[@href='logout']")
+	private WebElement logout;
+	
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -45,6 +48,11 @@ public class LoginPage {
 	public void verifyErrMsg(String expectedMSG) {
 		String actualMSG=errMsg.getText();
 		Assert.assertEquals(actualMSG,expectedMSG);
+	}
+	
+	public void SignOut(){
+		logout.click();
+		
 	}
 
 }
