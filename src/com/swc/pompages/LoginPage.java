@@ -19,12 +19,17 @@ public class LoginPage {
 	
 	@FindBy(xpath="(//img[@src='images/user_iocn_header.png'])/../b")
 	private WebElement welcome;
-	
+	//
 	@FindBy(xpath="//span[contains(.,'Please enter')]|//span[contains(.,'Invalid User')]")
 	private WebElement errMsg;
 	
 	@FindBy(xpath="//a[@href='logout']")
 	private WebElement logout;
+	
+	@FindBy(xpath="//span[@class='glyphicon glyphicon-calendar']")
+	private WebElement clickFromDate;
+	
+	 
 	
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -45,6 +50,15 @@ public class LoginPage {
 		return welcome.getText();
 	}
 	
+
+	
+	public void datePickerTest() {
+	
+	}
+          
+      
+        
+        
 	public void verifyErrMsg(String expectedMSG) {
 		String actualMSG=errMsg.getText();
 		Assert.assertEquals(actualMSG,expectedMSG);

@@ -12,4 +12,6 @@ public interface IAutoConst {
 	String XL_PATH="./data/input.xlsx";
 	String CONFIG_PATH="./data/config.properties";
 	String IMG_PATH="./screenshots/";
+	String LOG4J_Path = " ./Reports/SWC_log_html";
+	
 }

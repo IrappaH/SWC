@@ -21,6 +21,8 @@ public class EnterPage {
 	@FindBy(xpath="(//div[@class='col-xs-6 col-md-6 text-center'])[2]")
 	private WebElement sensors;
 	
+	
+	
 	public EnterPage(WebDriver driver) {
 		PageFactory.initElements(driver,this);
 	}

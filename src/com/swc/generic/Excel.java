@@ -46,6 +46,16 @@ public class Excel {
 		return v;
 	}
 	
+	public static String getCellValue(String path,String sheetName, int rowNum, int colNum){
+		String cellValue = "";
+		try {
+			Workbook wb = WorkbookFactory.create(new FileInputStream(path));
+			cellValue = wb.getSheet(sheetName).getRow(rowNum).getCell(colNum).toString();
+		} catch (Exception e) {
+		} 
+		return cellValue;
+	}
+	
 	public static String writeIntoExcel(String path, String sheet, int r, int c, String data) {
 		
 		try {

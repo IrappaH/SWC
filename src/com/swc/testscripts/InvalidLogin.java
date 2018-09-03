@@ -7,7 +7,7 @@ import com.swc.generic.Excel;
 import com.swc.pompages.LoginPage;
 
 public class InvalidLogin extends BaseTest {
-	@Test(priority=2,groups= {"login"})
+	@Test(priority=1,groups= {"login"})
 	public void testbInvalidLogin() throws InterruptedException {
 		int rc=Excel.getRowCount(XL_PATH, "InvalidLogin");
 		System.out.println("Total number of rows getting from Excel invalid sheet: "+rc);
@@ -26,6 +26,8 @@ public class InvalidLogin extends BaseTest {
 		//Verify err msg
 		l.verifyErrMsg(expectedMSG);
 		Thread.sleep(2000);
+		
+		
 		}
 	}
 

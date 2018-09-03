@@ -3,6 +3,7 @@ package com.swc.generic;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -17,7 +18,7 @@ import org.testng.annotations.Parameters;
 public abstract class BaseTest implements IAutoConst{
 	public WebDriver driver;
 	static {
-		/*System.setProperty(CHROME_KEY,CHROME_VALUE);*/
+		System.setProperty(CHROME_KEY,CHROME_VALUE);
 		System.setProperty(GECKO_KEY,GECKO_VALUE);
 		System.setProperty(EDGE_KEY, EDGE_VALUE);
 		/*System.setProperty(IE_KEY, IE_VALUE);*/
@@ -27,6 +28,9 @@ public abstract class BaseTest implements IAutoConst{
 	@Parameters({"ip","browser"})
 	@BeforeMethod(alwaysRun=true)
 	public void openApplication(String ip,String browser) throws Exception {
+		Logger logger = Logger.getLogger(BaseTest.class);
+		logger.debug("this Is Irappa modified---------");
+		
 		String appURL=AutoUtil.getProperty(CONFIG_PATH,"URL");
 		String strITO = AutoUtil.getProperty(CONFIG_PATH,"ITO");
 		long ITO = Long.parseLong(strITO);
@@ -39,6 +43,7 @@ public abstract class BaseTest implements IAutoConst{
 	//	driver = new InternetExplorerDriver();
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
+		logger.info("This is info : " + browser);
 	}
 	
 	//---------------------------------------------------------------------
