@@ -2,10 +2,9 @@
 
 <html>
   <head>
-  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -24,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.swc.testscripts.U_LoginPage" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.swc.testscripts.InvalidLogin" hash-for-method="testbInvalidLogin">testbInvalidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,21 +113,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.swc.testscripts.U_LoginPage" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.swc.testscripts.U_LoginPage" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.swc.testscripts.InvalidLogin" hash-for-method="testbInvalidLogin">testbInvalidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.swc.testscripts.InvalidLogin" hash-for-method="testbInvalidLogin">testbInvalidLogin</a> <!-- method navigator-link -->
@@ -151,52 +130,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.swc.testscripts.InvalidLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testbInvalidLogin">
-                  </a> <!-- testbInvalidLogin -->
-                  <span class="method-name">testbInvalidLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: call function result missing &apos;value&apos;
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;IRAPPA&apos;, ip: &apos;10.0.0.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.32.498550 (9dec58e66c31bc..., userDataDir: C:\Users\dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true, webdriver.remote.sessionid: ed4c14366a71b99516ef2df002a...}
-Session ID: ed4c14366a71b99516ef2df002a219aa
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at com.swc.pompages.LoginPage.setUserName(LoginPage.java:34)
-	at com.swc.testscripts.InvalidLogin.testbInvalidLogin(InvalidLogin.java:20)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.swc.testscripts.U_LoginPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -205,38 +141,10 @@ Session ID: ed4c14366a71b99516ef2df002a219aa
                   <a name="testValidLogin">
                   </a> <!-- testValidLogin -->
                   <span class="method-name">testValidLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: call function result missing &apos;value&apos;
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;IRAPPA&apos;, ip: &apos;10.0.0.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.32.498550 (9dec58e66c31bc..., userDataDir: C:\Users\dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true, webdriver.remote.sessionid: 3d4d78ac6b77b8be47102e70ab7...}
-Session ID: 3d4d78ac6b77b8be47102e70ab7e58af
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at com.swc.pompages.LoginPage.setUserName(LoginPage.java:34)
-	at com.swc.testscripts.U_LoginPage.testValidLogin(U_LoginPage.java:30)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -248,35 +156,6 @@ Session ID: 3d4d78ac6b77b8be47102e70ab7e58af
                   <a name="testbInvalidLogin">
                   </a> <!-- testbInvalidLogin -->
                   <span class="method-name">testbInvalidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testbInvalidLogin">
-                  </a> <!-- testbInvalidLogin -->
-                  <span class="method-name">testbInvalidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.swc.testscripts.U_LoginPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidLogin">
-                  </a> <!-- testValidLogin -->
-                  <span class="method-name">testValidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidLogin">
-                  </a> <!-- testValidLogin -->
-                  <span class="method-name">testValidLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -291,7 +170,7 @@ Session ID: 3d4d78ac6b77b8be47102e70ab7e58af
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Testfirefox&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Testfirefox&quot;&gt;
     &lt;parameter name=&quot;ip&quot; value=&quot;localhost&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
@@ -299,22 +178,6 @@ Session ID: 3d4d78ac6b77b8be47102e70ab7e58af
       &lt;class name=&quot;com.swc.testscripts.InvalidLogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Testfirefox --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Testchrome&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;ip&quot; value=&quot;localhost&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.swc.testscripts.U_LoginPage&quot;/&gt;
-      &lt;class name=&quot;com.swc.testscripts.InvalidLogin&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Testchrome --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;EdgeTest&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;ip&quot; value=&quot;localhost&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;MicrosoftEdge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.swc.testscripts.U_LoginPage&quot;/&gt;
-      &lt;class name=&quot;com.swc.testscripts.InvalidLogin&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- EdgeTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -327,12 +190,6 @@ Session ID: 3d4d78ac6b77b8be47102e70ab7e58af
             <ul>
               <li>
                 <span class="test-name">Testfirefox (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">Testchrome (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">EdgeTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -378,36 +235,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testValidLogin')
-data.setCell(0, 2, 'com.swc.testscripts.U_LoginPage')
-data.setCell(0, 3, 17648);
+data.setCell(0, 1, 'testbInvalidLogin')
+data.setCell(0, 2, 'com.swc.testscripts.InvalidLogin')
+data.setCell(0, 3, 11397);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testbInvalidLogin')
-data.setCell(1, 2, 'com.swc.testscripts.InvalidLogin')
-data.setCell(1, 3, 17110);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testbInvalidLogin')
-data.setCell(2, 2, 'com.swc.testscripts.InvalidLogin')
-data.setCell(2, 3, 16158);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testValidLogin')
-data.setCell(3, 2, 'com.swc.testscripts.U_LoginPage')
-data.setCell(3, 3, 14218);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testValidLogin')
-data.setCell(4, 2, 'com.swc.testscripts.U_LoginPage')
-data.setCell(4, 3, 7119);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testbInvalidLogin')
-data.setCell(5, 2, 'com.swc.testscripts.InvalidLogin')
-data.setCell(5, 3, 339);
+data.setCell(1, 1, 'testValidLogin')
+data.setCell(1, 2, 'com.swc.testscripts.U_LoginPage')
+data.setCell(1, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -418,52 +259,6 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testValidLogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testValidLogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-                <span class="reporter-method-output">Login success for :Welcome uswm and verifying below message</span>
-                <span class="reporter-method-output">Home Page is Displayed</span>
-                <span class="reporter-method-output">Login success for: Welcome uswm</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -479,103 +274,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.swc.testscripts.U_LoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApplication(localhost, firefox)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">openApplication(localhost, MicrosoftEdge)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">openApplication(localhost, chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">12710 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">13494 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication([TestResult name=testValidLogin status=FAILURE method=U_LoginPage.testValidLogin()[pri:1, instance:c...)</span>
-                <span class="method-start">19854 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.swc.testscripts.InvalidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApplication(localhost, chrome)</span>
-                <span class="method-start">20861 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.swc.testscripts.U_LoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication([TestResult name=testValidLogin status=SUCCESS method=U_LoginPage.testValidLogin()[pri:1, instance:c...)</span>
-                <span class="method-start">31142 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.swc.testscripts.InvalidLogin</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testbInvalidLogin</span>
-                <span class="method-start">31613 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication([TestResult name=testbInvalidLogin status=FAILURE method=InvalidLogin.testbInvalidLogin()[pri:2, ins...)</span>
-                <span class="method-start">31954 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.swc.testscripts.U_LoginPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">32758 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.swc.testscripts.InvalidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApplication(localhost, MicrosoftEdge)</span>
-                <span class="method-start">35715 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testbInvalidLogin</span>
-                <span class="method-start">37939 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.swc.testscripts.U_LoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication([TestResult name=testValidLogin status=SUCCESS method=U_LoginPage.testValidLogin()[pri:1, instance:c...)</span>
-                <span class="method-start">46978 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.swc.testscripts.InvalidLogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openApplication(localhost, firefox)</span>
-                <span class="method-start">47668 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication([TestResult name=testbInvalidLogin status=SUCCESS method=InvalidLogin.testbInvalidLogin()[pri:2, ins...)</span>
-                <span class="method-start">54101 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testbInvalidLogin</span>
-                <span class="method-start">56559 ms</span>
+                <span class="method-start">9778 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeApplication([TestResult name=testbInvalidLogin status=SUCCESS method=InvalidLogin.testbInvalidLogin()[pri:2, ins...)</span>
-                <span class="method-start">73680 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeApplication([TestResult name=testbInvalidLogin status=SUCCESS method=InvalidLogin.testbInvalidLogin()[pri:1, ins...)</span>
+                <span class="method-start">21176 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.swc.testscripts.U_LoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApplication(localhost, firefox)</span>
+                <span class="method-start">21221 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin</span>
+                <span class="method-start">29590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication([TestResult name=testValidLogin status=SKIP method=U_LoginPage.testValidLogin()[pri:2, instance:com....)</span>
+                <span class="method-start">29594 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

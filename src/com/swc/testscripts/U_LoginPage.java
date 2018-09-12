@@ -11,6 +11,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
 import com.swc.generic.BaseTest;
 import com.swc.generic.Excel;
 import com.swc.pompages.EnterPage;
@@ -20,12 +22,14 @@ import com.swc.pompages.WaterConsumptionInLitres;
 
 public class U_LoginPage extends BaseTest{
 
-	final static Logger logger = Logger.getLogger(U_LoginPage.class);
+//	final static Logger logger = Logger.getLogger(U_LoginPage.class);
 	@Test(priority=2,groups= {"login","smoke"})
 	public void testValidLogin() throws InterruptedException {
-		logger.info("User login validTest methon paased");
+		//logger = extent.startTest("Test Case Passed is User login validTest methon paased");
 		int rc = Excel.getRowCount(XL_PATH, "ValidLogin");
 		System.out.println("Total number of valid users count:"+rc);
+	//	logger = extent.startTest("Test Case Passed total number rows: "+ rc);
+	//	logger.log(LogStatus.PASS, "Test Case Passed is Row count: "+rc);
 		for(int i=1;i<=rc;i++) {
 		String un = Excel.getValue(XL_PATH, "ValidLogin", i, 0);
 		System.out.println("Reading from Excel username  :"+ un);
@@ -42,7 +46,7 @@ public class U_LoginPage extends BaseTest{
 		l.setPassword("6");
 		//Click login
 		l.clickLogin();
-		
+		//Hi Added Here see
 		//verify home page....
 		EnterPage e=new EnterPage(driver);
 		String eTitle1 = "WaterConsumption | Liter";
@@ -136,8 +140,13 @@ public class U_LoginPage extends BaseTest{
 		        //fromDate 
 		                  Thread.sleep(1000);
 		                  WebElement datefield = driver.findElement(By.xpath("//input[@id='fromDate']"));
-		                  datefield.sendKeys("07/23/2018 6:20 PM");
-		                  driver.findElement(By.xpath("//input[@type='submit']")).click();
+		                  datefield.sendKeys("07/23/2018 6:20 PM");	
+		                  	/*String xpath1 = "//span[@class='glyphicon glyphicon-calendar']";
+		              		WebElement datefield = driver.findElement(By.xpath(xpath1));
+		              		datefield.click();
+		              		Thread.sleep(1000);*/
+		              	//	driver.findElement(By.xpath(xpath)).click();
+		              		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		                  alert = driver.switchTo().alert();
 		                  String alerttxt3 = alert.getText();
 		               Reporter.log(alerttxt3);
@@ -147,6 +156,11 @@ public class U_LoginPage extends BaseTest{
 		                  Thread.sleep(1000);
 		                  WebElement todatefield = driver.findElement(By.xpath("//input[@id='toDate']"));
 		                  todatefield.sendKeys("09/23/2018 6:20 PM");
+		               /*   String x1 = "(//span[@class='glyphicon glyphicon-calendar'])[2]";
+		      			WebElement todatefield = driver.findElement(By.xpath(x1));
+		      			todatefield.click();
+		      			Thread.sleep(1000);
+		      			driver.findElement(By.xpath(x1)).click();*/
 		                
 		                  Thread.sleep(2000);
 		                  driver.findElement(By.xpath("//input[@type='submit']")).click();
@@ -177,6 +191,11 @@ public class U_LoginPage extends BaseTest{
 	}
 
 	}
+
+private void click() {
+	// TODO Auto-generated method stub
+	
+}
 
 
 }

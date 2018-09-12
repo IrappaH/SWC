@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Testfirefox</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 10 11:36:04 IST 2018</td>
+<td>Started on:</td><td>Wed Sep 12 16:53:08 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>74 seconds (74084 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30021 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,57 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.swc.testscripts.InvalidLogin.closeApplication()'><b>closeApplication</b><br>Test class: com.swc.testscripts.InvalidLogin<br>Parameters: [TestResult name=testbInvalidLogin status=SUCCESS method=InvalidLogin.testbInvalidLogin()[pri:1, instance:com.swc.testscripts.InvalidLogin@22a67b4] output={null}]<br/>
+<a href="#Output-1412577724" onClick='toggleBox("Output-1412577724", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1412577724" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1412577724">
+testbInvalidLogin is PASSED<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.swc.generic.BaseTest.closeApplication(BaseTest.java:62)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1412577724", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1412577724'><pre>java.lang.NullPointerException
+	at com.swc.generic.BaseTest.closeApplication(BaseTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.swc.testscripts.InvalidLogin@22a67b4</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,39 +126,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.swc.testscripts.U_LoginPage.testValidLogin()'><b>testValidLogin</b><br>Test class: com.swc.testscripts.U_LoginPage<br/>
-<a href="#Output-1350273840" onClick='toggleBox("Output-1350273840", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1350273840" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1350273840">
-Login success for :Welcome uswm and verifying below message<br/>
-Home Page is Displayed<br/>
-Login success for: Welcome uswm<br/>
-Login success for :Welcome uswm and verifying below message<br/>
-Home Page is Displayed<br/>
-Login success for: Welcome uswm<br/>
-Login success for :Welcome uswm and verifying below message<br/>
-Home Page is Displayed<br/>
-Login success for: Welcome uswm<br/>
-Login success for :Welcome uswm and verifying below message<br/>
-Home Page is Displayed<br/>
-Login success for: Welcome uswm<br/>
-Login success for :Welcome uswm and verifying below message<br/>
-Home Page is Displayed<br/>
-Login success for: Welcome uswm<br/>
-Login success for :Welcome uswm and verifying below message<br/>
-Home Page is Displayed<br/>
-Login success for: Welcome uswm<br/>
-</div>
-</td>
-<td></td>
-<td>14</td>
-<td>com.swc.testscripts.U_LoginPage@598067a5</td></tr>
-<tr>
 <td title='com.swc.testscripts.InvalidLogin.testbInvalidLogin()'><b>testbInvalidLogin</b><br>Test class: com.swc.testscripts.InvalidLogin</td>
 <td></td>
-<td>17</td>
-<td>com.swc.testscripts.InvalidLogin@3c0ecd4b</td></tr>
+<td>11</td>
+<td>com.swc.testscripts.InvalidLogin@22a67b4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.swc.testscripts.U_LoginPage.testValidLogin()'><b>testValidLogin</b><br>Test class: com.swc.testscripts.U_LoginPage</td>
+<td></td>
+<td>0</td>
+<td>com.swc.testscripts.U_LoginPage@79be0360</td></tr>
 </table><p>
 </body>
 </html>

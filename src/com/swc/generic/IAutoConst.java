@@ -1,5 +1,8 @@
 package com.swc.generic;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 public interface IAutoConst {
 	String CHROME_KEY="webdriver.chrome.driver";
 	String CHROME_VALUE="./data/chromedriver.exe";
@@ -13,5 +16,8 @@ public interface IAutoConst {
 	String CONFIG_PATH="./data/config.properties";
 	String IMG_PATH="./screenshots/";
 	String LOG4J_Path = " ./Reports/SWC_log_html";
+	String EXTENT_REPORT = "./Reports/test-output/STMExtentReport.html";
+	//ExtentReports extent =  new ExtentReports ("./Reports/test-output/STMExtentReport.html", true);
+	//ExtentTest Logger = null;
 	
 }

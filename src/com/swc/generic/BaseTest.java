@@ -1,5 +1,6 @@
 package com.swc.generic;
 
+import java.io.File;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
@@ -15,22 +16,25 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-public abstract class BaseTest implements IAutoConst{
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+public abstract class BaseTest extends ExtentManager implements IAutoConst{
 	public WebDriver driver;
+	
 	static {
 		System.setProperty(CHROME_KEY,CHROME_VALUE);
 		System.setProperty(GECKO_KEY,GECKO_VALUE);
 		System.setProperty(EDGE_KEY, EDGE_VALUE);
 		/*System.setProperty(IE_KEY, IE_VALUE);*/
-				
+		
 	}
 	
 	@Parameters({"ip","browser"})
 	@BeforeMethod(alwaysRun=true)
 	public void openApplication(String ip,String browser) throws Exception {
-		Logger logger = Logger.getLogger(BaseTest.class);
-		logger.debug("this Is Irappa modified---------");
-		
+		//logger = extent.startTest("Launch the browser ");	
 		String appURL=AutoUtil.getProperty(CONFIG_PATH,"URL");
 		String strITO = AutoUtil.getProperty(CONFIG_PATH,"ITO");
 		long ITO = Long.parseLong(strITO);
@@ -43,17 +47,19 @@ public abstract class BaseTest implements IAutoConst{
 	//	driver = new InternetExplorerDriver();
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
-		logger.info("This is info : " + browser);
+		
+		
 	}
 	
 	//---------------------------------------------------------------------
 	@AfterMethod(alwaysRun=true)
 	public void closeApplication(ITestResult test) {
 		String name=test.getName();
-		System.out.println("the name we reading from closing app: "+name);
+		System.out.println("The method we are closing that is: "+name);
 		int status=test.getStatus();
 		if(status==1) {
 			Reporter.log(name+" is PASSED",true);
+			logger.log(LogStatus.PASS, "+name+ is PASSED");
 		}
 		else {
 			Reporter.log(name+" is FAILED",true);
@@ -62,4 +68,3 @@ public abstract class BaseTest implements IAutoConst{
 		driver.quit();
 	}
 }
-
