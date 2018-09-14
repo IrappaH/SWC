@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[testbInvalidLogin is PASSED]]>
     </line>
     <line>
-      <![CDATA[testValidLogin is FAILED]]>
+      <![CDATA[Login success for :Welcome uswm and verifying below message]]>
+    </line>
+    <line>
+      <![CDATA[Home Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Login success for: Welcome uswm]]>
+    </line>
+    <line>
+      <![CDATA[testValidLogin is PASSED]]>
+    </line>
+    <line>
+      <![CDATA[WaterConsumptionInLitres is PASSED]]>
+    </line>
+    <line>
+      <![CDATA[WaterConsumptionInLitres is PASSED]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="30021" started-at="2018-09-12T11:23:08Z" finished-at="2018-09-12T11:23:38Z">
+  <suite name="Suite" duration-ms="76715" started-at="2018-09-14T17:02:57Z" finished-at="2018-09-14T17:04:14Z">
     <groups>
       <group name="smoke">
-        <method signature="U_LoginPage.testValidLogin()[pri:2, instance:com.swc.testscripts.U_LoginPage@79be0360]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
+        <method signature="U_LoginPage.testValidLogin()[pri:2, instance:com.swc.testscripts.U_LoginPage@22a67b4]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
       </group> <!-- smoke -->
       <group name="login">
-        <method signature="InvalidLogin.testbInvalidLogin()[pri:1, instance:com.swc.testscripts.InvalidLogin@22a67b4]" name="testbInvalidLogin" class="com.swc.testscripts.InvalidLogin"/>
-        <method signature="U_LoginPage.testValidLogin()[pri:2, instance:com.swc.testscripts.U_LoginPage@79be0360]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
+        <method signature="InvalidLogin.testbInvalidLogin()[pri:1, instance:com.swc.testscripts.InvalidLogin@57855c9a]" name="testbInvalidLogin" class="com.swc.testscripts.InvalidLogin"/>
+        <method signature="U_LoginPage.testValidLogin()[pri:2, instance:com.swc.testscripts.U_LoginPage@22a67b4]" name="testValidLogin" class="com.swc.testscripts.U_LoginPage"/>
       </group> <!-- login -->
     </groups>
-    <test name="Testfirefox" duration-ms="30021" started-at="2018-09-12T11:23:08Z" finished-at="2018-09-12T11:23:38Z">
-      <class name="com.swc.testscripts.U_LoginPage">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.U_LoginPage@79be0360]" name="openApplication" is-config="true" duration-ms="8369" started-at="2018-09-12T16:53:29Z" finished-at="2018-09-12T16:53:37Z">
+    <test name="Testfirefox" duration-ms="76715" started-at="2018-09-14T17:02:57Z" finished-at="2018-09-14T17:04:14Z">
+      <class name="com.swc.testscripts.Home_page">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.Home_page@3b084709]" name="openApplication" is-config="true" duration-ms="8351" started-at="2018-09-14T22:33:43Z" finished-at="2018-09-14T22:33:52Z">
           <params>
             <param index="0">
               <value>
@@ -36,27 +51,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="SKIP" signature="testValidLogin()[pri:2, instance:com.swc.testscripts.U_LoginPage@79be0360]" name="testValidLogin" duration-ms="2" started-at="2018-09-12T16:53:37Z" finished-at="2018-09-12T16:53:37Z">
+        <test-method status="PASS" signature="WaterConsumptionInLitres()[pri:3, instance:com.swc.testscripts.Home_page@3b084709]" name="WaterConsumptionInLitres" duration-ms="5114" started-at="2018-09-14T22:33:52Z" finished-at="2018-09-14T22:33:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.U_LoginPage@79be0360]" name="closeApplication" is-config="true" duration-ms="408" started-at="2018-09-12T16:53:37Z" finished-at="2018-09-12T16:53:38Z">
+        </test-method> <!-- WaterConsumptionInLitres -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.Home_page@3b084709]" name="closeApplication" is-config="true" duration-ms="2520" started-at="2018-09-14T22:33:57Z" finished-at="2018-09-14T22:33:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=SKIP method=U_LoginPage.testValidLogin()[pri:2, instance:com.swc.testscripts.U_LoginPage@79be0360] output={null}]]]>
+                <![CDATA[[TestResult name=WaterConsumptionInLitres status=SUCCESS method=Home_page.WaterConsumptionInLitres()[pri:3, instance:com.swc.testscripts.Home_page@3b084709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[testValidLogin is FAILED]]>
+              <![CDATA[WaterConsumptionInLitres is PASSED]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- com.swc.testscripts.U_LoginPage -->
-      <class name="com.swc.testscripts.InvalidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.InvalidLogin@22a67b4]" name="openApplication" is-config="true" duration-ms="9778" started-at="2018-09-12T16:53:08Z" finished-at="2018-09-12T16:53:17Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.Home_page@3b084709]" name="openApplication" is-config="true" duration-ms="7696" started-at="2018-09-14T22:33:59Z" finished-at="2018-09-14T22:34:07Z">
           <params>
             <param index="0">
               <value>
@@ -72,47 +85,99 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testbInvalidLogin()[pri:1, instance:com.swc.testscripts.InvalidLogin@22a67b4]" name="testbInvalidLogin" duration-ms="11397" started-at="2018-09-12T16:53:17Z" finished-at="2018-09-12T16:53:29Z">
+        <test-method status="PASS" signature="WaterConsumptionInLitres()[pri:3, instance:com.swc.testscripts.Home_page@3b084709]" name="WaterConsumptionInLitres" duration-ms="4388" started-at="2018-09-14T22:34:07Z" finished-at="2018-09-14T22:34:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testbInvalidLogin -->
-        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.InvalidLogin@22a67b4]" name="closeApplication" is-config="true" duration-ms="0" started-at="2018-09-12T16:53:29Z" finished-at="2018-09-12T16:53:29Z">
+        </test-method> <!-- WaterConsumptionInLitres -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.Home_page@3b084709]" name="closeApplication" is-config="true" duration-ms="2286" started-at="2018-09-14T22:34:11Z" finished-at="2018-09-14T22:34:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testbInvalidLogin status=SUCCESS method=InvalidLogin.testbInvalidLogin()[pri:1, instance:com.swc.testscripts.InvalidLogin@22a67b4] output={null}]]]>
+                <![CDATA[[TestResult name=WaterConsumptionInLitres status=SUCCESS method=Home_page.WaterConsumptionInLitres()[pri:3, instance:com.swc.testscripts.Home_page@3b084709] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.swc.generic.BaseTest.closeApplication(BaseTest.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[WaterConsumptionInLitres is PASSED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.swc.testscripts.Home_page -->
+      <class name="com.swc.testscripts.U_LoginPage">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.U_LoginPage@22a67b4]" name="openApplication" is-config="true" duration-ms="7775" started-at="2018-09-14T22:33:31Z" finished-at="2018-09-14T22:33:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testValidLogin()[pri:2, instance:com.swc.testscripts.U_LoginPage@22a67b4]" name="testValidLogin" duration-ms="2112" started-at="2018-09-14T22:33:39Z" finished-at="2018-09-14T22:33:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Login success for :Welcome uswm and verifying below message]]>
+            </line>
+            <line>
+              <![CDATA[Home Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Login success for: Welcome uswm]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.U_LoginPage@22a67b4]" name="closeApplication" is-config="true" duration-ms="2464" started-at="2018-09-14T22:33:41Z" finished-at="2018-09-14T22:33:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=U_LoginPage.testValidLogin()[pri:2, instance:com.swc.testscripts.U_LoginPage@22a67b4] output=Login success for :Welcome uswm and verifying below message]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testValidLogin is PASSED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.swc.testscripts.U_LoginPage -->
+      <class name="com.swc.testscripts.InvalidLogin">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:com.swc.testscripts.InvalidLogin@57855c9a]" name="openApplication" is-config="true" duration-ms="23630" started-at="2018-09-14T22:32:57Z" finished-at="2018-09-14T22:33:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testbInvalidLogin()[pri:1, instance:com.swc.testscripts.InvalidLogin@57855c9a]" name="testbInvalidLogin" duration-ms="7961" started-at="2018-09-14T22:33:21Z" finished-at="2018-09-14T22:33:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testbInvalidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:com.swc.testscripts.InvalidLogin@57855c9a]" name="closeApplication" is-config="true" duration-ms="2383" started-at="2018-09-14T22:33:29Z" finished-at="2018-09-14T22:33:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testbInvalidLogin status=SUCCESS method=InvalidLogin.testbInvalidLogin()[pri:1, instance:com.swc.testscripts.InvalidLogin@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[testbInvalidLogin is PASSED]]>

@@ -59,7 +59,7 @@ public abstract class BaseTest extends ExtentManager implements IAutoConst{
 		int status=test.getStatus();
 		if(status==1) {
 			Reporter.log(name+" is PASSED",true);
-			logger.log(LogStatus.PASS, "+name+ is PASSED");
+		//	logger.log(LogStatus.PASS, "+name+ is PASSED");
 		}
 		else {
 			Reporter.log(name+" is FAILED",true);

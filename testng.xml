@@ -9,6 +9,7 @@
     <classes>
       <class name="com.swc.testscripts.U_LoginPage"/>
       <class name="com.swc.testscripts.InvalidLogin"></class>
+      <class name="com.swc.testscripts.Home_page"></class>
     
     </classes>
   </test> <!-- Test -->
